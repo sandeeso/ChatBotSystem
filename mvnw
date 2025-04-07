@@ -89,6 +89,7 @@ if [ -z "$M2_HOME" ] ; then
 
   saveddir=`pwd`
 
+
   M2_HOME=`dirname "$PRG"`/..
 
   # make it fully qualified
