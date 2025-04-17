@@ -34,7 +34,7 @@ public class ChatService {
                 "messages", List.of(message),
                 "temperature", 0.7
         );
-
+        System.out.println("setting header");
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
         try {
