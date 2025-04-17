@@ -20,6 +20,7 @@ public class ChatController {
 
         @PostMapping
         public ResponseEntity<String> chat(@RequestBody Map<String, String> request) {
+            System.out.println("Chat Bot Service");
             String userMessage = request.get("message");
             String response = chatGptService.askChatGpt(userMessage);
             return ResponseEntity.ok(response);
